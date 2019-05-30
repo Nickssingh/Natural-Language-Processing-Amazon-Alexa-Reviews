@@ -14,6 +14,8 @@ _Analysis_
 1. We created a column to store the text length and created boxplots of text lengths for different ratings  
 a. We observed that the text length for rating 5 is smaller (excluding outliers) than those of lower ratings. This could be because people are more descriptive/vocal in negative feedbacks, but not so much in positive ones.
 
+![](NLP_Images/.png)
+
 2. We then also created a bar chart to know the count of the different ratings. The count of 5 star ratings was much higher than those for other ratings. Hence, our model was better at predicting the ratings for positive reviews.
 
 3. To build our model, we have used only the 1 star and 5 star ratings.
