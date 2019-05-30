@@ -14,27 +14,39 @@ _Analysis_
 1. We created a column to store the text length and created boxplots of text lengths for different ratings  
 a. We observed that the text length for rating 5 is smaller (excluding outliers) than those of lower ratings. This could be because people are more descriptive/vocal in negative feedbacks, but not so much in positive ones.
 
-![](NLP_Images/.png)
+![](NLP_Images/Text_Length.png)
 
 2. We then also created a bar chart to know the count of the different ratings. The count of 5 star ratings was much higher than those for other ratings. Hence, our model was better at predicting the ratings for positive reviews.
+
+![](NLP_Images/Ratings_Count.png)
 
 3. To build our model, we have used only the 1 star and 5 star ratings.
 
 4. We then created a function (word_list) that would remove all the punctuations and stopwords, and return a list of important words. Following is an example of how the function works.
 
+![](NLP_Images/Remove_Punctuations_and_Stopwords.png)
+
 5. We have used Count Vectorizer object to get the weights of the tokens – the number of times a token appear in a document.  
 a. Following is an example of the number of unique words and their frequencies shown by the vectorizer.
 
+![](NLP_Images/Unique_Words.png)
+
+![](NLP_Images/Unique_Words1.png)
 
 This review had 39 unique words and 4 of them were repeated twice (shown by the blue pointers).
 
 Following are the words
 
+![](NLP_Images/Words.png)
+
 6. The shape of our sparse matrix is 2447 * 3986, and it has 25728 non-zero values.
+
+![](NLP_Images/Sparse_Matrix_Shape.png)
 
 7. Prediction Model – Multinomial Naive Bayes
 
 Confusion Matrix and Classification Report
 
+![](NLP_Images/Report.png)
 
 In the confusion matrix, it can be seen that the recall rate for 5 star ratings is 99%, but it is just 42% for 1 star ratings – with the overall accuracy of 96%. The performance aligns with our expectation that few instances of 1 star rating will negatively impact recall for 1 star ratings.
