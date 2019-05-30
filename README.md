@@ -1,7 +1,8 @@
 # Natural Language Processing - Amazon Alexa Reviews
 
 ## A. Goal
-We have built a text classifier – a sentiment analysis model to predict whether the customer reviews are positive or negative. For the products/services/brands with large customer bases, it is impossible to manually glean negative reviews (or positive ones) from huge datasets.
+We have built a text classifier – a sentiment analysis model to predict whether the customer reviews are positive or negative. For the products/services/brands with large customer bases, it is impossible to manually glean negative reviews (or positive ones) from huge datasets.  
+
 Using Natural Language Processing (NLP), businesses can automate the process of highlighting negative reviews and thus can effectively uncover the major gaps in their products/services; however, it is important to note that frequency of positive and negative reviews plays an important role determining the performance of the model. In our data set, positive reviews outnumbered negative ones comprehensively (Positive: 2286, Negative: 161); hence, the accuracy while predicting positive reviews was significantly superior.
 
 ## B. Data Source
